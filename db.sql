@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS items (
     location_lost VARCHAR(255),
     date_lost DATE,
     contact_info VARCHAR(255),
-    image_path VARCHAR(255)
+    image_path VARCHAR(255),
+    found TINYINT(1) DEFAULT 0
 );
 -- FIXME: hash and store the adming password in db instead of plain file
 -- CREATE TABLE IF NOT EXISTS admins (
