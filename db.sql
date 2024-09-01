@@ -11,9 +11,9 @@ CREATE TABLE IF NOT EXISTS items (
     contact_info VARCHAR(255),
     image_path VARCHAR(255)
 );
-
-CREATE TABLE IF NOT EXISTS admins (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password_hash VARCHAR(255) NOT NULL
-);
+-- FIXME: hash and store the adming password in db instead of plain file
+-- CREATE TABLE IF NOT EXISTS admins (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     username VARCHAR(50) NOT NULL UNIQUE,
+--     password_hash VARCHAR(255) NOT NULL
+-- );
